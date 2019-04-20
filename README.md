@@ -27,3 +27,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Prototype screens
+:file_folder:  [Adobe XD (development)](https://xd.adobe.com/spec/20fce5db-1541-473d-8546-794a51f4936f-75af/)
