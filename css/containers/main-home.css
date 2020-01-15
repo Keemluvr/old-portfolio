@@ -1,0 +1,14 @@
+.bg-home {
+    background-color: coral;
+    background-image: url(../../img/background-home.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-position: 50% 50%;
+}
+
+.opacity-home {
+    background-color: rgba(20, 18, 18,.8);
+    min-height: 100vh;
+}

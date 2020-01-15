@@ -1,0 +1,15 @@
+.simple-element {
+    border-bottom: 1px solid transparent;
+}
+
+.simple-element:hover {
+    border-bottom: 1px solid var(--color-primary);
+    transition: .5s ease-in-out;
+}
+
+@media (max-width: 810px) { 
+    .simple-element:hover {
+        border-bottom: 0px solid var(--color-primary);
+        transition: .5s none;
+    }
+}

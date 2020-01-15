@@ -1,0 +1,94 @@
+.main-introduction {
+  grid-area: introduction;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* esquerda */
+.main-introduction > .job {
+  writing-mode: vertical-rl;
+  transform: scale(-1);
+  width: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.main-introduction > .job > span {
+  display: block;
+  width: 100%;
+  font-size: 1.26em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* meio */
+.main-introduction > .intro {
+  font-family: var(--font-secondary);
+  text-transform: capitalize;
+  font-weight: 200;
+  text-align: center;
+  align-self: flex-end;
+  margin-bottom: 20vh;
+}
+
+.main-introduction > .intro > .name {
+  font-size: 2.5em;
+}
+
+.main-introduction > .intro > .icon {
+  height: 1.26em;
+  width: auto;
+  margin: 20px 7px 0 0;
+}
+
+.main-introduction > .intro > .local {
+  font-size: 1.26em;
+  letter-spacing: 1px;
+}
+
+/* direita */
+
+.main-introduction > .sidenav {
+  writing-mode: vertical-rl;
+  transform: scale(1);
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main-introduction > .sidenav > span {
+  display: block;
+  width: 100%;
+  font-size: 1.26em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+
+.main-introduction > .sidenav > .line {
+    width: 1px;
+    height: 50px;
+    background-color: var(--color-primary);
+}
+
+.main-introduction > .sidenav > .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid var(--color-primary);
+}
+
+.main-introduction > .sidenav > .circle:hover {
+    background-color: var(--color-primary);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+@media (max-width: 810px) {
+  .main-introduction > .job,
+  .main-introduction > .sidenav {
+    margin: 0 10px;
+  }
+}

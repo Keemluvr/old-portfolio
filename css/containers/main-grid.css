@@ -1,0 +1,17 @@
+.grid-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 90vh;
+    grid-template-areas:
+		"............ header"
+		"introduction introduction"
+	;
+    margin: 0vh 7.07vw;
+
+}
+
+@media (max-width: 810px) {
+    .grid-home {
+        margin: 0vh 0vw;
+    }
+}
