@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61" height="56" viewBox="0 0 61 56">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_5" data-name="Retângulo 5" width="61" height="56" transform="translate(140 1529)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="behance" transform="translate(-140 -1529)" clip-path="url(#clip-path)">
+    <g id="behance-2" data-name="behance" transform="translate(142.5 1529)">
+      <g id="_521247904">
+        <rect id="Retângulo_7" data-name="Retângulo 7" width="56" height="56" rx="5.37" fill="none"/>
+        <path id="Caminho_5" data-name="Caminho 5" d="M18.795,25.315H12.274V20.329h6.521a2.622,2.622,0,0,1,2.685,2.685,2.565,2.565,0,0,1-2.685,2.3ZM28,33.37a6.36,6.36,0,0,0-4.219-6.137,7.826,7.826,0,0,0,3.068-5.753,6.721,6.721,0,0,0-6.521-6.521H7.288V41.041H20.329A7.694,7.694,0,0,0,28,33.37Zm6.521-1.534H49.1v-.384a9.9,9.9,0,0,0-9.973-9.973c-5.753,0-9.589,4.6-9.589,9.973a9.267,9.267,0,0,0,9.589,9.589c5.753,0,8.822-3.452,9.589-7.671h-5.37a4.182,4.182,0,0,1-4.219,3.836c-2.3,0-4.219-2.3-4.6-5.37Zm8.822-2.3H34.9c.384-2.685,1.918-4.219,4.219-4.219s3.836,1.918,4.219,4.219ZM33.37,16.493H44.877v3.836H33.37Zm-21.1,13.041h6.521c1.534,0,4.219.384,4.219,3.068,0,1.534-1.151,3.452-2.685,3.452H12.274Z" fill="#fefefe" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

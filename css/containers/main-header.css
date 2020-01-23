@@ -87,7 +87,7 @@
 
 #navbar-mobile:checked ~ label .menu {
     background-color: var(--color-secondary) !important;
-    box-shadow: 0 0 0 250vw var(--color-secondary);
+    box-shadow: 0 0 0 250vh var(--color-secondary);
 }
 
 #navbar-mobile:checked ~ label .hamburguer {
@@ -105,6 +105,8 @@
     bottom: 0;
     width: 100%;
 }
+
+
 
 
 @media (max-width: 810px) {

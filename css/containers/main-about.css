@@ -1,5 +1,5 @@
-.home {
-    background-image: url(../../img/background-home.png);
+.about {
+    background-image: url(../../img/background-about.png);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,7 +7,7 @@
     object-position: 50% 50%;
 }
 
-.opacity-home {
+.opacity-about {
     background-color: rgba(20, 18, 18,.8);
     min-height: 100vh;
 }

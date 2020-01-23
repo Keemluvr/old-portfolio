@@ -1,5 +1,5 @@
 .main-introduction {
-  grid-area: introduction;
+  grid-area: conten;
   display: flex;
   justify-content: space-between;
 }
@@ -8,7 +8,7 @@
 .main-introduction > .job {
   writing-mode: vertical-rl;
   transform: scale(-1);
-  width: 20px;
+  width: auto;
   display: inline-block;
   position: relative;
 }
@@ -28,7 +28,7 @@
   font-weight: 200;
   text-align: center;
   align-self: flex-end;
-  margin-bottom: 20vh;
+  margin-bottom: 14vh;
 }
 
 .main-introduction > .intro > .name {
@@ -47,7 +47,7 @@
 }
 
 /* direita */
-
+/* direita */
 .main-introduction > .sidenav {
   writing-mode: vertical-rl;
   transform: scale(1);
@@ -58,7 +58,7 @@
   position: relative;
 }
 
-.main-introduction > .sidenav > span {
+.main-introduction > .sidenav > a > span {
   display: block;
   width: 100%;
   font-size: 1.26em;
@@ -68,22 +68,22 @@
 }
 
 .main-introduction > .sidenav > .line {
-    width: 1px;
-    height: 50px;
-    background-color: var(--color-primary);
+  width: 1px;
+  height: 50px;
+  background-color: var(--color-primary);
 }
 
-.main-introduction > .sidenav > .circle {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: 1px solid var(--color-primary);
+.main-introduction > .sidenav > a > .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary);
 }
 
-.main-introduction > .sidenav > .circle:hover {
-    background-color: var(--color-primary);
-    transition: .3s ease-in-out;
-    cursor: pointer;
+.main-introduction > .sidenav > a >.circle:hover {
+  background-color: var(--color-primary);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 @media (max-width: 810px) {

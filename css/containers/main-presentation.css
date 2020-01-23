@@ -1,0 +1,129 @@
+.main-presentation {
+  grid-area: conten;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* esquerda */
+.main-presentation > .social {
+  height: 60vh;
+  width: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.main-presentation > .social > a {
+  margin: auto;
+}
+
+.main-presentation > .social > a > .icon {
+  width: 50px;
+}
+
+/* meio */
+.main-presentation > .presentation {
+  align-self: flex-end;
+  margin-bottom: 14vh;
+}
+
+.main-presentation > .presentation > .photo {
+  height: 50%;
+  width: 100%;
+  margin-bottom: 10vh;
+}
+
+.main-presentation > .presentation > .photo > .img {
+  width: 30vw;
+  height: 30vw;
+  max-width: 300px;
+  max-height: 300px;
+  margin: auto;
+  background-image: url("../../img/photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-self: flex-end;
+  border-radius: 50%;
+  background-color: rgba(20, 18, 18, 0.8);
+}
+
+.main-presentation > .presentation > .photo > .img:before {
+    width: 30vw;
+    height: 30vw;
+    max-width: 300px;
+    max-height: 300px;
+    margin: auto;
+    align-self: flex-end;
+    border-radius: 50%;
+    background-color: rgba(20, 18, 18, 0.8);
+    
+  }
+
+.main-presentation > .presentation > .resume {
+  font-family: var(--font-secondary);
+  font-size: 2.5em;
+  font-weight: 100;
+  margin: 0px 10vw;
+  text-align: center;
+  line-height: 45px;
+}
+
+/* direita */
+.main-presentation > .sidenav {
+  writing-mode: vertical-rl;
+  transform: scale(1);
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main-presentation > .sidenav > a > span {
+  display: block;
+  width: 100%;
+  font-size: 1.26em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+
+.main-presentation > .sidenav > .line {
+  width: 1px;
+  height: 50px;
+  background-color: var(--color-primary);
+}
+
+.main-presentation > .sidenav > a > .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary);
+}
+
+.main-presentation > .sidenav > a >.circle:hover {
+  background-color: var(--color-primary);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+@media (max-width: 810px) {
+  .main-presentation > .social,
+  .main-presentation > .sidenav {
+    margin: 0 10px;
+  }
+
+  .main-presentation > .presentation > .photo > .img {
+    width: 30vw;
+    height: 30vw;
+    min-width: 150px;
+    min-height: 150px;
+  }
+
+  .main-presentation > .presentation > .resume {
+    font-size: 1.26em;
+    margin: 0px 5vw;
+  }
+}

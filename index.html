@@ -8,7 +8,8 @@
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500&display=swap" rel="stylesheet">  
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/settings/color.css" />
     <link rel="stylesheet" href="css/settings/font.css" />
@@ -18,58 +19,131 @@
 
     <link rel="stylesheet" href="css/components/simple-element.css" />
 
+    <!-- home -->
     <link rel="stylesheet" href="css/containers/main-grid.css" />
     <link rel="stylesheet" href="css/containers/main-home.css">
     <link rel="stylesheet" href="css/containers/main-header.css" />
     <link rel="stylesheet" href="css/containers/main-introduction.css" />
+    <!-- about -->
+    <link rel="stylesheet" href="css/containers/main-about.css">
+    <link rel="stylesheet" href="css/containers/main-presentation.css">
 
   </head>
   <body>
 
-    <div class="bg-home">
-      <div class="opacity-home">
-        <div class="grid-home">
-          <header class="main-header">
-            <input id="navbar-mobile" type="checkbox">
-            <label for="navbar-mobile">
-                <div class="menu">
-                    <span class="hamburguer"></span>
+    <div class="">
+      <div class="">
+
+        <!-- ==================================  HOME ================================== -->
+        <section id="home" class="home">
+          <div class="opacity-home">
+            <div class="grid-home">
+              <!-- Header -->
+              <header class="main-header">
+                <input id="navbar-mobile" type="checkbox">
+                <label for="navbar-mobile">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+                <!-- Nav -->
+                <nav class="nav">
+                    <ul class="nav-internal">
+                        <li class="simple-element active"><a href="#home">home</a></li>
+                        <li class="simple-element"><a href="#about">about</a></li>
+                        <li class="simple-element"><a href="#projects">projects</a></li>
+                        <li class="simple-element"><a href="#contact">contact</a></li class="simple-element">
+                    </ul>
+                </nav>
+                <!-- End nav -->
+              </header>
+              <!-- End header -->
+
+              <div class="main-introduction">
+                <div class="job">
+                  <span>front-end developer</span>				
                 </div>
-            </label>
-
-            <nav class="nav">
-                <ul class="nav-internal">
-                    <li class="simple-element active"><a href="">home</a></li>
-                    <li class="simple-element"><a href="">about</a></li>
-                    <li class="simple-element"><a href="">projects</a></li>
-                    <li class="simple-element"><a href="">contact</a></li class="simple-element">
-                </ul>
-            </nav>
-          </header>
-
-          <section class="main-introduction">
-            
-
-            <div class="job">
-              <span>front-end developer</span>				
+                <div class="intro">
+                  <h1 class="name">keila fernandes</h1>
+                  <img class="icon" src="img/map-pointer.png" alt="map pointer"><span class="local">Brasil</span>
+                </div>
+                <div class="sidenav">
+                  <span class="line"></span>
+                  <a href="#"><span class="index">01</span></a>
+                  <a href="#about"><span class="circle"></span></a>
+                  <a href="#projects"><span class="circle"></span></a>
+                  <a href="#contact"><span class="circle"></span></a>
+                </div>
+              </div>
+    
             </div>
-            
-            <div class="intro">
-              <h1 class="name">keila fernandes</h1>
-              <img class="icon" src="img/map-pointer.png" alt="map pointer"><span class="local">Brasil</span>
-            </div>
+          </div>
+        </section>
+        <!-- ================================  END HOME ================================== -->
 
-            <div class="sidenav">
-              <span class="line"></span>
-              <span class="index">01</span>
-              <span class="circle"><a href="#"></a></span>
-              <span class="circle"><a href="#"></a></span>
-              <span class="circle"><a href="#"></a></span>
-            </div>
+        <!-- ==================================  ABOUT ================================== -->
+        <section id="about" class="about">
+          <div class="opacity-about">
+            <div class="grid-about">
+             <!-- Header -->
+             <header class="main-header">
+              <input id="navbar-mobile" type="checkbox">
+              <label for="navbar-mobile">
+                  <div class="menu">
+                      <span class="hamburguer"></span>
+                  </div>
+              </label>
+              <!-- Nav -->
+              <nav class="nav">
+                  <ul class="nav-internal">
+                      <li class="simple-element"><a href="#home">home</a></li>
+                      <li class="simple-element active"><a href="#about">about</a></li>
+                      <li class="simple-element"><a href="#projects">projects</a></li>
+                      <li class="simple-element"><a href="#contact">contact</a></li class="simple-element">
+                  </ul>
+              </nav>
+              <!-- End nav -->
+            </header>
+            <!-- End header -->
             
-          </section>
-        </div>
+            <div class="main-presentation">
+                <div class="social">
+                  <a href="https://github.com/Keemluvr" target="_blanck"><img src="img/github.svg" class="icon" alt="github"></a>
+                  <a href="https://www.behance.net/keemluvr" target="_blanck"><img src="img/behance.svg" class="icon" alt="behance"></a>
+                  <a href="https://www.linkedin.com/in/keila-fernandes/" target="_blanck"><img src="img/linkedin.svg" class="icon" alt="linkdin"></a>
+                  <a href="https://www.facebook.com/KeilaDaianeFernandes" target="_blanck"><img src="img/facebook.svg" class="icon" alt="facebook"></a>				
+                </div>
+
+                <div class="presentation">
+                  <div class="photo"> 
+                    <div class="img"></div>
+                  </div> 
+                  <p class="resume">
+                    Bachelor's in Computer Science, Self-taught in web 
+                    design and have some experience in web development.
+                  </p>
+                </div>
+
+                <div class="sidenav">
+                  <span class="line"></span>
+                  <a href="#home"><span class="circle"></span></a>
+                  <a href="#"><span class="index">02</span></a>
+                  <a href="#projects"><span class="circle"></span></a>
+                  <a href="#contact"><span class="circle"></span></a>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </section>
+        <!-- ================================  END ABOUT ================================== -->
       </div>
     </div>
+
+   
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+
   </body>
 </html>
