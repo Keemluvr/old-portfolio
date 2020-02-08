@@ -1,5 +1,5 @@
 .main-development {
-  background-color: ;
+  background-color: var(--color-primary);
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
