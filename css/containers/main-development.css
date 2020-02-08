@@ -1,0 +1,43 @@
+.main-development {
+  background-color: ;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  background-color: var(--color-secondary);
+  height: 100vh;
+}
+
+.main-development > span {
+  font-size: 4rem;
+}
+
+.main-development > h1 {
+  font-family: var(--font-secondary);
+  font-size: 1.9rem;
+  margin: 10vh 0 0 0;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.main-development > input {
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  margin: 5vh 0 0 0;
+  letter-spacing: 1px;
+  padding: 15px 40px;
+  font-weight: 500;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  background: transparent;
+}
+
+.main-development > input:hover {
+  color: var(--color-secondary);
+  background: var(--color-primary);
+  cursor: pointer;
+  transition: 0.5s;
+}

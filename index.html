@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/elements/base.css">
 
     <link rel="stylesheet" href="css/components/simple-element.css" />
+    <link rel="stylesheet" href="css/components/sidenav.css">
 
     <!-- home -->
     <link rel="stylesheet" href="css/containers/main-grid.css" />
@@ -27,6 +28,8 @@
     <!-- about -->
     <link rel="stylesheet" href="css/containers/main-about.css">
     <link rel="stylesheet" href="css/containers/main-presentation.css">
+    <!-- projects -->
+    <link rel="stylesheet" href="css/containers/main-projects.css">
 
   </head>
   <body>
@@ -34,31 +37,32 @@
     <div class="">
       <div class="">
 
+      
         <!-- ==================================  HOME ================================== -->
         <section id="home" class="home">
           <div class="opacity-home">
+            <!-- Header -->
+            <header class="main-header">
+              <input id="navbar-mobile" type="checkbox">
+              <label for="navbar-mobile">
+                  <div class="menu">
+                      <span class="hamburguer"></span>
+                  </div>
+              </label>
+              <!-- Nav -->
+              <nav class="nav">
+                  <ul class="nav-internal">
+                      <li class="simple-element active"><a href="#home">home</a></li>
+                      <li class="simple-element"><a href="#about">about</a></li>
+                      <li class="simple-element"><a href="#projects">projects</a></li>
+                      <li class="simple-element"><a href="#contact">contact</a></li class="simple-element">
+                  </ul>
+              </nav>
+              <!-- End nav -->
+            </header>
+            <!-- End header -->
             <div class="grid-home">
-              <!-- Header -->
-              <header class="main-header">
-                <input id="navbar-mobile" type="checkbox">
-                <label for="navbar-mobile">
-                    <div class="menu">
-                        <span class="hamburguer"></span>
-                    </div>
-                </label>
-                <!-- Nav -->
-                <nav class="nav">
-                    <ul class="nav-internal">
-                        <li class="simple-element active"><a href="#home">home</a></li>
-                        <li class="simple-element"><a href="#about">about</a></li>
-                        <li class="simple-element"><a href="#projects">projects</a></li>
-                        <li class="simple-element"><a href="#contact">contact</a></li class="simple-element">
-                    </ul>
-                </nav>
-                <!-- End nav -->
-              </header>
-              <!-- End header -->
-
+            
               <div class="main-introduction">
                 <div class="job">
                   <span>front-end developer</span>				
@@ -81,30 +85,11 @@
         </section>
         <!-- ================================  END HOME ================================== -->
 
+
         <!-- ==================================  ABOUT ================================== -->
         <section id="about" class="about">
           <div class="opacity-about">
             <div class="grid-about">
-             <!-- Header -->
-             <header class="main-header">
-              <input id="navbar-mobile" type="checkbox">
-              <label for="navbar-mobile">
-                  <div class="menu">
-                      <span class="hamburguer"></span>
-                  </div>
-              </label>
-              <!-- Nav -->
-              <nav class="nav">
-                  <ul class="nav-internal">
-                      <li class="simple-element"><a href="#home">home</a></li>
-                      <li class="simple-element active"><a href="#about">about</a></li>
-                      <li class="simple-element"><a href="#projects">projects</a></li>
-                      <li class="simple-element"><a href="#contact">contact</a></li class="simple-element">
-                  </ul>
-              </nav>
-              <!-- End nav -->
-            </header>
-            <!-- End header -->
             
             <div class="main-presentation">
                 <div class="social">
@@ -137,6 +122,18 @@
           </div>
         </section>
         <!-- ================================  END ABOUT ================================== -->
+      
+
+        <!-- =================================  PROJECTS ================================== -->
+        <section id="projects" class="projects">
+          <div class="opacity-projects">
+            <div class="grid-projects">
+             
+            </div>
+          </div>
+        </section>
+        <!-- ===============================  END PROJECTS ================================== -->
+      
       </div>
     </div>
 
@@ -144,6 +141,7 @@
 
     <!-- Javascript -->
     <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
 
   </body>
 </html>

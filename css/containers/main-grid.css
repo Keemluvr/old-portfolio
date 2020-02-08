@@ -1,19 +1,20 @@
 .grid-home,
-.grid-about {
+.grid-about,
+.grid-projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 90vh;
+    grid-template-rows: 90vh;
     grid-template-areas:
-		"............ header"
-		"conten       conten"
+		"conten conten"
 	;
     margin: 0vh 7.07vw;
-}
+} 
 
 
 @media (max-width: 810px) {
     .grid-home,
-    .grid-about {
+    .grid-about,
+    .grid-projects {
         margin: 0vh 0vw;
     }
 }
