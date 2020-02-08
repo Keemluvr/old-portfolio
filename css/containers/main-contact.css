@@ -1,0 +1,13 @@
+.contacts {
+    background-image: url(../../img/background-contact.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-position: 50% 50%;
+}
+
+.opacity-contacts {
+    background-color: rgba(20, 18, 18,.8);
+    min-height: 100vh;
+}
