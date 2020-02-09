@@ -1,6 +1,9 @@
 navegacaoInterna()
 scrollSuave()
+scrollMouse()
+scrollTouch()
 
+const sections = document.querySelectorAll('.js-menu-content section')
 // -------------- Navegação interna --------------
 function navegacaoInterna() {
     const menuNav = document.querySelectorAll(".js-menu li");
@@ -47,12 +50,11 @@ function scrollSuave() {
 
 
 // -------------- Scroll com o mouse --------------
+function scrollMouse() {
+    window.addEventListener("wheel", scrollWheel);
+}
 
-
-const sections = document.querySelectorAll('.js-menu-content section')
-window.addEventListener("wheel", scrollMouse);
-
-function scrollMouse(event) {
+function scrollWheel(event) {
     const direction = Math.sign(event.deltaY);
     // mouse com o movimento para baixo
     if(direction == 1) {
@@ -95,3 +97,31 @@ function updateNav(choiceSection) {
         }
     })
 }
+
+
+
+// -------------- Scroll com o touch --------------
+function scrollTouch() {
+    let initialTouch;
+    window.addEventListener('touchstart', event => {
+        initialTouch = event.touches[0].clientY;
+    })
+
+    window.addEventListener("touchend", event => {
+        var finalTouch = event.changedTouches[0].clientY;
+        if (initialTouch > finalTouch) {
+            sections.forEach( section => {
+                const topSection = section.getBoundingClientRect().top
+                const nextSection = section.nextElementSibling
+                currentSection(nextSection, topSection)
+            })
+        } else {
+            sections.forEach( section => {
+                const topSection = section.getBoundingClientRect().top
+                const previousSection = section.previousElementSibling
+                currentSection(previousSection, topSection)
+            })
+        }
+    });
+}
+

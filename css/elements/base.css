@@ -3,6 +3,8 @@ body {
     color: var(--color-primary);
     background-color: var(--color-primary);
     overflow: hidden;
+    -webkit--overflow-scrolling: touch;
+    --ms-overflow-style: --ms-autohiding-scrollbar;
 }
 
 a {
