@@ -1,0 +1,90 @@
+.main-form {
+    grid-area: conten;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0vh 7vw;
+}
+
+.main-form > .title {
+    margin: 0 auto ;
+}
+
+.main-form > .form {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.main-form > .form > label {
+    font-family: var(--font-primary);
+    font-size: 1.26em;
+    margin-bottom: 10px;
+}
+
+.main-form > .form > input[type=text], 
+.main-form > .form > input[type=email] {
+    border: transparent;
+    background: transparent !important;
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+    font-family: var(--font-primary);
+    padding: 10px;
+    font-size: 1.26em;
+    margin-bottom: 5vh;
+    width: 70vw;
+}
+
+.main-form > .form > input[type=text]:focus, 
+.main-form > .form > input[type=email]:focus {
+   outline-color: transparent;
+}
+
+.main-form > .form > textarea {
+    padding: 10px;
+    background: transparent !important;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 3px;
+    font-size: 1.26em;
+    font-family: var(--font-primary);
+    min-width: 90%;
+    width: 98% !important;
+    max-width: 100%;
+    min-height: 5vh;
+    height: 10vh;
+    max-height: 30vh;
+    margin-bottom: 10px;
+}
+
+.main-form > .form > input[type=button] {
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    border: 1px solid var(--color-primary);
+    border-radius: 3px;
+    font-size: 1.26em;
+    font-family: var(--font-primary);
+    min-width: 150px;
+    width: 10vw;
+    height: 5vh;
+    font-weight: 200;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+
+.main-form > .form > input[type=button]:hover {
+    background: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 810px) {
+    .main-form {
+        margin: 0 20px;
+    }
+
+    .main-form > .form > textarea {
+        width: 91% !important;
+        max-height: 15vh !important;
+    }
+}

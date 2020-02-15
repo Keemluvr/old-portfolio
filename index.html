@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/components/simple-element.css" />
     <link rel="stylesheet" href="css/components/sidenav.css">
     <link rel="stylesheet" href="css/components/social.css">
+    <link rel="stylesheet" href="css/components/title.css">
 
     <!-- home -->
     <link rel="stylesheet" href="css/containers/main-grid.css" />
@@ -33,6 +34,7 @@
     <link rel="stylesheet" href="css/containers/main-projects.css">
     <!-- contact -->
     <link rel="stylesheet" href="css/containers/main-contact.css">
+    <link rel="stylesheet" href="css/containers/main-form.css">
 
   </head>
   <body>
@@ -68,8 +70,8 @@
 
         <div class="sidenav">
           <span class="line"></span>
-          <a href="#home"><span class="circle"></span></a>
-          <a href="#"><span class="index">02</span></a>
+          <a href="#home"><span class="index">01</span></a>
+          <a href="#about"><span class="circle"></span></a>
           <a href="#projects"><span class="circle"></span></a>
           <a href="#contact"><span class="circle"></span></a>
         </div>
@@ -86,7 +88,7 @@
                 </div>
 
                 <div class="intro">
-                  <h1 class="name">keila fernandes</h1>
+                  <h1 class="title">keila fernandes</h1>
                   <img class="icon" src="img/map-pointer.png" alt="map pointer"><span class="local">brazil</span>
                 </div>
 
@@ -120,8 +122,6 @@
                     design and have experience in web development.
                   </p>
                 </div>
-
-                
               </div>
     
             </div>
@@ -146,6 +146,22 @@
           <div class="opacity-contacts">
             <div class="grid-contacts">
              
+              <div class="main-form">
+                <h1 class="title">contact</h1>
+                <div class="form">
+                    <label for="name">name</label>
+                    <input id="name" type="text">
+
+                    <label for="email">email</label>
+                    <input id="email" type="email">
+
+                    <label for="message">message</label>
+                    <textarea name="" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="button" value="send">
+                </div>
+              </div>
+
             </div>
           </div>
          </section>
