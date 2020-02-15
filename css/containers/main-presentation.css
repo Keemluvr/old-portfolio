@@ -4,28 +4,10 @@
   justify-content: space-between;
 }
 
-/* esquerda */
-.main-presentation > .social {
-  height: 60vh;
-  width: auto;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  align-self: center;
-}
-
-.main-presentation > .social > a {
-  margin: auto;
-}
-
-.main-presentation > .social > a > .icon {
-  width: 50px;
-}
-
 /* meio */
 .main-presentation > .presentation {
-  align-self: flex-end;
   margin-bottom: 14vh;
+  align-self: flex-end;
 }
 
 .main-presentation > .presentation > .photo {
@@ -70,16 +52,44 @@
 }
 
 @media (max-width: 810px) {
+  .main-presentation {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70vh 20vh;
+    grid-template-areas:
+    "presentation"
+    "social";
+  }
+
+  .main-presentation > .presentation {
+    grid-area: presentation;
+    margin: auto;
+  }
+
+  .main-presentation > .social {
+    grid-area: social;
+    display: flex;
+    flex-flow: row;
+  }
+
+  .main-presentation > .social > a {
+     margin: auto;
+  }
+
   .main-presentation > .social,
   .main-presentation > .sidenav {
     margin: 0 10px;
   }
 
+  .main-presentation > .presentation > .photo {
+    margin-bottom: 4vh;
+  }
+
   .main-presentation > .presentation > .photo > .img {
     width: 30vw;
     height: 30vw;
-    min-width: 150px;
-    min-height: 150px;
+    min-width: 130px;
+    min-height: 130px;
   }
 
   .main-presentation > .presentation > .resume {

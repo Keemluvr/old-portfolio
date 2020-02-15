@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="css/components/simple-element.css" />
     <link rel="stylesheet" href="css/components/sidenav.css">
+    <link rel="stylesheet" href="css/components/social.css">
 
     <!-- home -->
     <link rel="stylesheet" href="css/containers/main-grid.css" />
@@ -39,47 +40,56 @@
     <div class="">
       <div class="js-menu-content">
 
-      
+        <!-- Header -->
+        <header class="main-header">
+
+          <!-- Nav mobile -->
+          <input id="navbar-mobile" class="js-navbar-mobile" type="checkbox">
+          <label for="navbar-mobile">
+              <div class="menu js-menu-mobile">
+                  <span class="hamburguer"></span>
+              </div>
+          </label>
+          <!-- End nav mobile -->
+
+          <!-- Nav -->
+          <nav class="nav">
+              <ul class="nav-internal js-menu">
+                  <li class="simple-element"><a href="#home">home</a></li>
+                  <li class="simple-element"><a href="#about">about</a></li>
+                  <li class="simple-element"><a href="#projects">projects</a></li>
+                  <li class="simple-element"><a href="#contact">contact</a></li class="simple-element">
+              </ul>
+          </nav>
+          <!-- End nav -->
+
+        </header>
+        <!-- End header -->
+
+        <div class="sidenav">
+          <span class="line"></span>
+          <a href="#home"><span class="circle"></span></a>
+          <a href="#"><span class="index">02</span></a>
+          <a href="#projects"><span class="circle"></span></a>
+          <a href="#contact"><span class="circle"></span></a>
+        </div>
+
         <!-- ==================================  HOME ================================== -->
         <section id="home" class="home js-scroll-mouse">
           <div class="opacity-home">
-            <!-- Header -->
-            <header class="main-header">
-              <input id="navbar-mobile" type="checkbox">
-              <label for="navbar-mobile">
-                  <div class="menu">
-                      <span class="hamburguer"></span>
-                  </div>
-              </label>
-              <!-- Nav -->
-              <nav class="nav">
-                  <ul class="nav-internal js-menu">
-                      <li class="simple-element"><a href="#home">home</a></li>
-                      <li class="simple-element"><a href="#about">about</a></li>
-                      <li class="simple-element"><a href="#projects">projects</a></li>
-                      <li class="simple-element"><a href="#contact">contact</a></li class="simple-element">
-                  </ul>
-              </nav>
-              <!-- End nav -->
-            </header>
-            <!-- End header -->
+            
             <div class="grid-home">
             
               <div class="main-introduction">
-                <div class="job">
+                <div class="job js-job">
                   <span>front-end developer</span>				
                 </div>
+
                 <div class="intro">
                   <h1 class="name">keila fernandes</h1>
                   <img class="icon" src="img/map-pointer.png" alt="map pointer"><span class="local">brazil</span>
                 </div>
-                <div class="sidenav">
-                  <span class="line"></span>
-                  <a href="#"><span class="index">01</span></a>
-                  <a href="#about"><span class="circle"></span></a>
-                  <a href="#projects"><span class="circle"></span></a>
-                  <a href="#contact"><span class="circle"></span></a>
-                </div>
+
               </div>
     
             </div>
@@ -111,13 +121,7 @@
                   </p>
                 </div>
 
-                <div class="sidenav">
-                  <span class="line"></span>
-                  <a href="#home"><span class="circle"></span></a>
-                  <a href="#"><span class="index">02</span></a>
-                  <a href="#projects"><span class="circle"></span></a>
-                  <a href="#contact"><span class="circle"></span></a>
-                </div>
+                
               </div>
     
             </div>

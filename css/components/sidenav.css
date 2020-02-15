@@ -1,12 +1,13 @@
 /* sidenav da direita */
 .sidenav {
+  height: 90vh;
+  right: 0;
   writing-mode: vertical-rl;
-  transform: scale(1);
-  width: 20px;
+  position: fixed;
   display: flex;
-  justify-content: center;
   align-items: center;
-  position: relative;
+  margin: 8vh 7.07vw auto 0;
+  justify-content: center;
 }
 
 .sidenav > a > span {
@@ -35,4 +36,13 @@
   background-color: var(--color-primary);
   transition: 0.3s ease-in-out;
   cursor: pointer;
+}
+
+
+@media (max-width: 810px) {
+  .sidenav {
+    display: none;
+  }
+
+  
 }

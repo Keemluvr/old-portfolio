@@ -2,7 +2,7 @@
 .grid-about,
 .grid-projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 5% 90%;
     grid-template-rows: 90vh;
     grid-template-areas:
 		"conten conten"
@@ -17,5 +17,8 @@
     .grid-about,
     .grid-projects {
         margin: 0vh 0vw;
+        padding-top: 10vh;
+        grid-template-columns: 10% 90%;
     }
+    
 }

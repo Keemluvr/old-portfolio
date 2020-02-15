@@ -1,0 +1,17 @@
+/* esquerda */
+.main-presentation > .social {
+  height: 60vh;
+  width: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.main-presentation > .social > a {
+  margin: auto;
+}
+
+.main-presentation > .social > a > .icon {
+  width: 50px;
+}

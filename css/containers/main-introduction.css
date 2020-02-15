@@ -28,7 +28,7 @@
   font-weight: 200;
   text-align: center;
   align-self: flex-end;
-  margin-bottom: 14vh;
+  margin:  0 auto 14vh auto;
 }
 
 .main-introduction > .intro > .name {

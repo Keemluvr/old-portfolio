@@ -115,6 +115,11 @@
 
 @media (max-width: 810px) {
 
+    .main-header {
+        width: 100%;
+        margin: 0 0px;
+    }
+
     .menu {
         display: inline;
         background-color: var(--color-secondary);
@@ -126,7 +131,7 @@
 
     .main-header > .nav > .nav-internal {
         display: inline;
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);

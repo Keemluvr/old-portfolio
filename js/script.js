@@ -1,29 +1,37 @@
+const sections = document.querySelectorAll('.js-menu-content section')
+const menuMobile = document.querySelector('.js-menu-mobile')
+const menuMobileCheckBox = document.querySelector('.js-navbar-mobile')
+
 navegacaoInterna()
 scrollSuave()
 scrollMouse()
 scrollTouch()
 
-const sections = document.querySelectorAll('.js-menu-content section')
 // -------------- Navegação interna --------------
 function navegacaoInterna() {
     const menuNav = document.querySelectorAll(".js-menu li");
     const menuContent = document.querySelectorAll(".js-menu-content section");
 
     if (menuNav.length && menuContent.length) {
-    menuNav[0].classList.add("active");
+        menuNav[0].classList.add("active");
 
-    function activeSection(index) {
-        menuNav.forEach( section => {
-            section.classList.remove('active')
+        function activeSection(index) {
+            menuNav.forEach( section => {
+                section.classList.remove('active')
+            })
+            menuNav[index].classList.add('active')
+        }
+
+        menuNav.forEach((itemMenu, index) => {
+            itemMenu.addEventListener("click", () => {
+                activeSection(index);
+            });
+
+            // itemMenu.addEventListener("touch", () => {
+            //     console.log(menuMobileCheckBox)
+            // });
         })
-        menuNav[index].classList.add('active')
-    }
-
-    menuNav.forEach((itemMenu, index) => {
-        itemMenu.addEventListener("click", () => {
-        activeSection(index);
-        });
-    })
+       
     }
 }
 
@@ -51,7 +59,9 @@ function scrollSuave() {
 
 // -------------- Scroll com o mouse --------------
 function scrollMouse() {
-    window.addEventListener("wheel", scrollWheel);
+    // if (verifyMenuOpen() ) {
+        window.addEventListener("wheel", scrollWheel);
+    // }
 }
 
 function scrollWheel(event) {
@@ -102,26 +112,54 @@ function updateNav(choiceSection) {
 
 // -------------- Scroll com o touch --------------
 function scrollTouch() {
-    let initialTouch;
-    window.addEventListener('touchstart', event => {
-        initialTouch = event.touches[0].clientY;
-    })
+    // if (verifyMenuOpen() ) {
+        let initialTouch;
+        window.addEventListener('touchstart', event => {
+            initialTouch = event.touches[0].clientY;
+        })
 
-    window.addEventListener("touchend", event => {
-        var finalTouch = event.changedTouches[0].clientY;
-        if (initialTouch > finalTouch) {
-            sections.forEach( section => {
-                const topSection = section.getBoundingClientRect().top
-                const nextSection = section.nextElementSibling
-                currentSection(nextSection, topSection)
-            })
+        window.addEventListener("touchmove", event => {
+            var finalTouch = event.changedTouches[0].clientY;
+            if (initialTouch > finalTouch) {
+                sections.forEach( section => {
+                    const topSection = section.getBoundingClientRect().top
+                    const nextSection = section.nextElementSibling
+                    currentSection(nextSection, topSection)
+                })
+            } else {
+                sections.forEach( section => {
+                    const topSection = section.getBoundingClientRect().top
+                    const previousSection = section.previousElementSibling
+                    currentSection(previousSection, topSection)
+                })
+            }
+        });
+    // }
+}
+
+// Previne o scroll ao abrir o menu no mobile
+const jobLeft = document.querySelector('.js-job')
+menuMobile.addEventListener('click', openMenuMobile)
+
+function openMenuMobile() {
+    menuMobile.classList.toggle('open')
+    menuMobile.classList.forEach( clas => {
+        if (clas == 'open') {
+            jobLeft.style.color = "var(--color-secondary)"
         } else {
-            sections.forEach( section => {
-                const topSection = section.getBoundingClientRect().top
-                const previousSection = section.previousElementSibling
-                currentSection(previousSection, topSection)
-            })
+            jobLeft.style.color = "var(--color-primary)"
         }
-    });
+    })
+}
+
+function verifyMenuOpen() {
+    // menuMobile.classList.forEach( clas => {
+    //     if (clas == 'open') {
+    //         return true
+    //     } else {
+    //         return false
+    //     }
+    // })
+    return false
 }
 
